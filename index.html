@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
   </head>
-  <body>
+  <body id="home" data-spy="scroll" data-target=".navbar">
 
   	<!-- nav -->
-		<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+		<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
 			<div class="container">
 			  <a class="navbar-brand order-1 mr-0" href="#">Full Stack Conf</a>
 			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,7 +30,7 @@
   	<!-- jumbotron -->
   	<div class="jumbotron jumbotron-fluid bg-info text-white">
   		<div class="container text-sm-center">
-		    <h1 class="display-2">Full Stack Conf</h1>
+		    <h1 class="display-2 pt-5">Full Stack Conf</h1>
 		    <p class="lead">A One-day Conference About All Things JavaScript!</p>
 
 				<div class="btn-group mt-4" role="group" aria-label="Callout buttons">
@@ -44,10 +44,8 @@
     <!-- /jumbotron -->
 
 		<div class="container pt-4">
-
-		  <div class="row">
-		  	
-		  	<!-- about -->
+			<!-- about -->
+		  <div id ="about" class="row">
 		    <div class="col-lg order-lg-2">
 		      <h3 class="mb-4">About Full Stack Conf</h3>
 		      <img class="mb-4 img-fluid rounded d-none d-sm-block" src="img/pdx.jpg" />
@@ -142,7 +140,7 @@
 		  <!-- /speakers -->
 
 		  <!-- schedule -->
-		  <h1 class="display-4 text-center text-muted my-5">Schedule</h1>
+		  <h1 id="schedule" class="display-4 text-center text-muted my-5">Schedule</h1>
 
 		  <ul class="list-group">
 		  	<li class="list-group-item">
